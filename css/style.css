@@ -64,16 +64,6 @@ a:active { /* selected link */
   text-decoration: none;
 }
 
-.button.read-more {
-  background-color: transparent;
-  color: #ff7f50 !important;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
-}
-.button.read-more:hover {
-  background-color: #ff7f50;
-  color: #ffffff !important;
-}
 
 .button.view-cv {
   background-color: transparent;
