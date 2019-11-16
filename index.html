@@ -13,8 +13,8 @@
   <body>
 
     <header>
-      <div class="header">
-        <img src="https://via.placeholder.com/32x32" alt="Xiaosu Guan">
+      <div class="container">
+        <img src="https://via.placeholder.com/32x32" alt="Xiaosu Guan" class="logo">
         <nav>
           <ul>
             <li>
@@ -32,81 +32,74 @@
     </header>
 
     <main>
-      <div class="hero">
+      <div class="container">
         <div>
           <h1>Hi, my name is Xiaosu Guan <span>I am a UX designer who is based in Berlin</span>
           </h1>
-          <p>This is where I should write more about myself.</p>
+          <p>This is where I should write more about myself.
+          </p>
         </div>
       </div>
 
-
-      <div class="work">
-        <div>
-          <h2> My Work</h2>
-
+      <div id="work">
+        <div class="container">
           <div>
-            <div>
-              <picture>
-                <source srcset="img/schnitzeljagd/landing-map-big.png" media="(max-width:767px)">
-                <img src="img/schnitzeljagd/landing-map-small.png" alt="Schnitzeljagd Landing Page Mockup">
-              </picture>
-            </div>
+            <h2>My Work</h2>
+            <div class="row">
+              <div class="column">
+                <div>
+                  <div>
+                    <picture>
+                      <source srcset="img/schnitzeljagd/landing-map-big.png" media="(max-width:767px)">
+                      <img src="img/schnitzeljagd/landing-map-small.png" alt="Schnitzeljagd Landing Page Mockup">
+                    </picture>
+                  </div>
+                </div>
+              </div>
 
-            <div>
-              <h3>Schnitzeljagd </h3>
-              <p>Schnitzeljagd is a movie/TV show filming location finding APP
-              </p>
-              <p>This is a part of my Online course training, and I was in charge of doing user research, user flow, mock ups, and usability test.
-              </p>
-              <a href="schnitzeljagd.html" class="button">Read More</a>
+                <div>
+                  <h3>Schnitzeljagd </h3>
+                  <p>Schnitzeljagd is a movie/TV show filming location finding APP
+                  </p>
+                  <p>This is a part of my Online course training, and I was in charge of doing user research, user flow, mock ups, and usability test.
+                  </p>
+                  <a href="schnitzeljagd.html" class="button">Read More</a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div>
-            <div>
-              <picture>
-                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                <img src="http://via.placeholder.com/1200x800" alt="My Image">
-              </picture>
+          <footer id="contact">
+            <div class="container">
+              <div>
+                <h2>Contact Me</h2>
+                <p>Would you like to discuss more opportunities? Please in touch. Call:
+                  <a href="tel:+4915158129893">+4915158129893</a> or Skype me at:
+                  <a href="skype:xuerumugua"> xuerumugua </a> .Prefer sending email?
+                </p>
+                <div>
+                  <a href="mailto:xiaosuguan@gmail.com" class="button email">email me</a>
+                </div>
+                <div>
+                  <nav>
+                    <ul>
+                      <li>
+                        <a href="">linkedin</a>
+                      </li>
+                      <li>
+                        <a href="">Behance</a>
+                      </li>
+                      <li>
+                        <a href="">Xing</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <p>
+                  &copy; Xiaosu Guan
+                </p>
+              </div>
             </div>
-
-            <div>
-              <h3>project2</h3>
-              <p>
-                place holder for introduction of project 2
-              </p>
-              <p>
-                place holder for skill used in project 2
-              </p>
-              <a href="" class="button">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer id="contact">
-      <div>
-        <h2>Contact Me</h2>
-        <p>Would you like to discuss more opportunities? Please in touch. Call:
-          <a href="tel:+4915158129893">+4915158129893</a> or Skype me at:
-          <a href="skype:xuerumugua">xuerumugua</a> .Prefer sending email?
-        </p>
-        <div>
-          <a href="mailto:xiaosuguan@gmail.com" class="button email">email me</a>
-        </div>
-        <div>
-          <a href="">linkedin</a>
-          <a href="">Behance</a>
-          <a href="">Xing</a>
-        </div>
-        <p>
-          &copy; Xiaosu Guan
-        </p>
-
-      </div>
-    </footer>
-  </body>
+          </footer>
 
 </html>
