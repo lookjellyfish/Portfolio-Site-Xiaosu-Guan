@@ -2,13 +2,8 @@
   box-sizing: border-box;
 }
 /* General css */
-@media only screen and (min-width: 640px) {
-}
-@media only screen and (min-width: 1024px) {
-}
-
 header {
-  text-align: unset;
+  text-align: center ;
   background-color: #ccffcc;
   padding: 10px 0;
   border-bottom: 3px solid #ffffff;
@@ -65,8 +60,6 @@ h4 {
 
 img {
   width: 100%;
-  max-width: 100%;
-  height: auto;
 }
 
 /* link */
@@ -139,7 +132,6 @@ a:active { /* selected link */
 nav{
     margin-top: 4px;
     width: auto;
-    float: right;
 }
 
 nav ul {
@@ -166,23 +158,34 @@ nav > ul > li > a {
   margin-left: auto;
   margin-right: auto;
 }
-.row{
-  margin:10px 10px;
+#work .row{
+  margin:30px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
 }
 .center{
   text-align: center;
 }
-.col-md-6{
-  width: 50%;
+footer{
+  text-align: center;
 }
-[class*="col"]{
-  float: left;
-  padding: 10px;
+
+footer ul {
+  list-style-type: none;
+  margin: 30px 0 0;
+  padding: 0;
+  text-align: center;
 }
-.row::after{
-  content: "";
-  clear: both;
-  display: table;
+
+footer li{
+  display:inline-block;
+}
+
+footer ul li a {
+  padding:0 10px;
+  text-transform: uppercase;
+  font-weight:700;
+  color:#4a4a4a;
 }
 
 @keyframes color-change {
@@ -214,4 +217,43 @@ nav > ul > li > a {
 }
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+  nav{
+      float: right;
+      margin-top: 14px;
+  }
+  #work h2{
+    text-align: center;
+  }
+  .col-md-5{
+    width: 41.66%;
+  }
+  .col-md-6{
+    width: 50%;
+  }
+  .col-md-7{
+    width: 58.33%;
+  }
+  .col-md-12{
+    width: 100%;
+  }
+  [class*="col"]{
+    float: left;
+    padding: 10px;
+  }
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .profile img{
+    max-width: 250px;
+  }
+}
+@media only screen and (min-width: 1024px) {
 }
