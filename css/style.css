@@ -3,18 +3,19 @@
 }
 /* General css */
 header {
-  text-align: center ;
   background-color: #ccffcc;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   border-bottom: 3px solid #ffffff;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
-
 .logo{
-  max-width:50px;
+  max-width: 50px;
+}
+main{
+  padding-top: 56px;
 }
 
 body {
@@ -127,22 +128,16 @@ a:active { /* selected link */
   color: #ffffff !important;
   text-transform: uppercase;
 }
-
 /* nav */
 nav{
     margin-top: 4px;
     width: auto;
 }
-
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 1em 0;
   padding: 0;
   text-align: center;
-}
-
-nav li{
-  display:inline-block;
 }
 
 nav > ul > li > a {
@@ -150,6 +145,35 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight:700;
   color:#4a4a4a;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 .container{
@@ -219,13 +243,20 @@ footer ul li a {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-@media only screen and (min-width: 640px) {
+
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
   }
   nav{
       float: right;
       margin-top: 14px;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
   }
   #work h2{
     text-align: center;

@@ -4,9 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css"> <href href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9d40a33298.js" crossorigin="anonymous"></script>
     <title>About Xiaosu Guan - UX Designer - Berlin</title>
   </head>
 
@@ -14,7 +15,8 @@
 
     <header>
       <div class="container">
-        <img src="https://via.placeholder.com/32x32" alt="Xiaosu Guan logo" class="logo">
+        <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" src="https://via.placeholder.com/32x32" alt="Xiaosu Guan logo" >
         <nav>
           <ul>
             <li>
@@ -26,9 +28,12 @@
             <li>
               <a href="#contact">Contact</a>
             </li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+            </li>
           </ul>
         </nav>
       </div>
+    </div>
     </header>
 
     <main>
@@ -110,6 +115,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
   </body>
 
