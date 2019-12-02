@@ -131,6 +131,7 @@ a:active { /* selected link */
 /* nav */
 nav{
     margin-top: 4px;
+    display: inline-block;
     width: auto;
 }
 nav ul {
@@ -145,10 +146,6 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight:700;
   color:#4a4a4a;
-}
-nav {
-  display: inline-block;
-  width: 100%;
 }
 
 .navtoggle li:not(:last-child) {
