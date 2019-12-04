@@ -4,7 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css"> <href href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/9d40a33298.js" crossorigin="anonymous"></script>
@@ -12,7 +13,6 @@
   </head>
 
   <body>
-
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
@@ -26,7 +26,7 @@
               <a href="about-me.html">About Me</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onclick="menuToggle()">Contact</a>
             </li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
             </li>
@@ -50,7 +50,7 @@
               <div class="profile">
                 <picture>
                   <source srcset="img/profilephoto/myphoto.jpg" media="(max-width:767px)">
-                  <img src="img/profilephoto/myphotosmall.jpg">
+                  <img src="img/profilephoto/myphotosmall.jpg" alt="xiaosuguan's photo">
                 </picture>
               </div>
               <h2>My Story</h2>
@@ -83,6 +83,7 @@
             </div>
           </div>
         </div>
+      </div>
     </main>
 
     <footer id="contact">
